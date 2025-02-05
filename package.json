@@ -1,0 +1,13 @@
+{
+  "name": "vue_app",
+  "version": "1.0.0",
+  "description": "is a simple app",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd vue-simple-app && yarn build",
+    "postinstall": "cd vue-simple-app && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
