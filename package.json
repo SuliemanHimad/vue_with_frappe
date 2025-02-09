@@ -4,10 +4,11 @@
   "description": "is a simple app",
   "main": "index.js",
   "scripts": {
-    "build": "cd vue-simple-project && yarn build",
-    "postinstall": "cd vue-simple-project && npm install"
+    "build": "cd vue-view && yarn build",
+    "postinstall": "cd vue-view && npm install",
+    "start": "cd vue-view && yarn dev"
   },
-  "keywords": [], 
+  "keywords": [],
   "author": "",
   "license": "ISC"
 }

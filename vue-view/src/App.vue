@@ -1,6 +1,7 @@
 <template>
   <div class="container mt-5">
     <h1>hello world</h1>
+    <button class="btn btn-primary">click me</button>
   </div>
 </template>
 
