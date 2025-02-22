@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build --base=/assets/vue_app/frontend && yarn copy-html-entry",
     "copy-html-entry": "cp ../vue_app/public/frontend/index.html ../vue_app/www/todo.html",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint ."
+    
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.5",

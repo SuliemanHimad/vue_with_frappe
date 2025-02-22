@@ -6,7 +6,7 @@
   "scripts": {
     "build": "cd vue-view && yarn build",
     "postinstall": "cd vue-view && npm install",
-    "start": "cd vue-view && yarn dev"
+    "dev": "cd vue-view && yarn dev"
   },
   "keywords": [],
   "author": "",
