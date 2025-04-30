@@ -16,7 +16,7 @@
       class="input mb-4"
     />
     <div class="text-center">
-      <button @click="loginUser" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full">
+      <button @click="loginUser" class="!bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full">
         Login
       </button>
     </div>
@@ -50,10 +50,16 @@ const loginUser = async () => {
     const data = response.data.message;
     if (data.success_key) {
       msg.value = `✅ ${data.message}`;
+      localStorage.setItem("message",data.message)
       localStorage.setItem("api_key", data.api_key);
       localStorage.setItem("api_secret", data.api_secret);
       localStorage.setItem("sid", data.sid);
       localStorage.setItem("userEmail", data.userEmail);
+      localStorage.setItem("userName",data.userName)
+      setTimeout(() => {
+        localStorage.clear();
+        location.reload();
+      }, 1000*60*5); // 300000ms = 5 minutes
       router.push("/student");
     } else {
       msg.value = "❌ Login failed.";
