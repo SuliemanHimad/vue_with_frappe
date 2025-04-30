@@ -1,9 +1,10 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import frappeui from "frappe-ui/vite";
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [vue(), frappeui()],
+  plugins: [vue(), frappeui(), tailwindcss(),],
   build: {
     outDir: "../vue_app/public/frontend",
     emptyOutDir: true,
